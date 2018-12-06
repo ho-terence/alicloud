@@ -9,16 +9,10 @@ import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Build;
 import android.util.Log;
-import android.widget.EditText;
-
-import com.alibaba.cloudpushdemo.R;
 import com.alibaba.cloudpushdemo.bizactivity.MainActivity;
 import com.alibaba.sdk.android.push.CloudPushService;
 import com.alibaba.sdk.android.push.CommonCallback;
 import com.alibaba.sdk.android.push.noonesdk.PushServiceFactory;
-import com.alibaba.sdk.android.push.register.GcmRegister;
-import com.alibaba.sdk.android.push.register.HuaWeiRegister;
-import com.alibaba.sdk.android.push.register.MiPushRegister;
 
 public class MainApplication extends Application {
     private static final String TAG = "Init";
@@ -28,6 +22,7 @@ public class MainApplication extends Application {
     public void onCreate() {
         super.onCreate();
         initCloudChannel(this);
+        //测试一下
     }
 
     /**
